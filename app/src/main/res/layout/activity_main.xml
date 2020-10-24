@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/fons">
+
+    <TextView
+        android:id="@+id/tv_pregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pregunta"
+        android:layout_gravity="center"
+        android:layout_weight="0.8"
+        android:layout_marginTop="150dp"
+        android:textSize="28sp"
+        android:textColor="@color/questiontext"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pregunta X de X"
+        android:layout_gravity="center"
+        android:textColor="@color/progresstext"/>
+
+    <Button
+        android:id="@+id/b_true"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:text="True"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="@color/truebutton"/>
+
+    <Button
+        android:id="@+id/b_false"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:text="False"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/falsebutton"/>
+
+
+</LinearLayout>
