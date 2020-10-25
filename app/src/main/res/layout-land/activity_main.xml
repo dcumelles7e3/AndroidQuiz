@@ -4,16 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/fons"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pregunta"
+        android:id="@+id/tv_pregunta"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_gravity="center"
-        android:layout_weight="0.8"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:layout_weight="0.6"
+        android:textColor="@color/questiontext"
+        android:textSize="28sp"
+        tools:hint="Pregunta" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -22,28 +28,44 @@
         android:layout_height="wrap_content" />
 
     <TextView
+        android:id="@+id/tv_progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pregunta X de X"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:textColor="@color/progresstext"
+        tools:hint="Pregunta X de X" />
 
-    <Button
-        android:layout_width="300dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.2"
-        android:text="True"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:textSize="30dp"
-        android:textStyle="bold"/>
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.2"
-        android:text="False"
-        android:layout_gravity="center"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:layout_marginBottom="80dp"/>
+        android:orientation="horizontal"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/b_true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:background="@color/truebutton"
+            android:text="@string/b_true"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="20dp"/>
+
+        <Button
+            android:id="@+id/b_false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:background="@color/falsebutton"
+            android:text="@string/b_false"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="20dp"/>
+    </LinearLayout>
+
 
 </LinearLayout>
