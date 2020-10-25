@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    
+
     public void comprovar (Boolean boto){
         if (preguntes[npregunta].isResposta()==boto){
             Toast.makeText(this, "Right choice!", Toast.LENGTH_SHORT).show();
@@ -75,10 +75,11 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Wrong answer!", Toast.LENGTH_SHORT).show();
         }
 
-        progressBar.incrementProgressBy(10);
+
 
         if(npregunta!=(MAX_PREGUNTES-1)) {
             npregunta++;
+            progressBar.incrementProgressBy(10);
             tv_pregunta.setText(preguntes[npregunta].getPregunta());
             tv_progress.setText("Question " + (npregunta + 1) + " of " + MAX_PREGUNTES);
         }else{
