@@ -12,6 +12,10 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * @author Dídac Cumelles Cenzano
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     AlertDialog.Builder dialog;
@@ -56,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 comprovar(true);
             }
-
         });
 
         b_false.setOnClickListener(new View.OnClickListener() {
@@ -74,8 +77,6 @@ public class MainActivity extends AppCompatActivity {
         }else{
             Toast.makeText(this, "Wrong answer!", Toast.LENGTH_SHORT).show();
         }
-
-
 
         if(npregunta!=(MAX_PREGUNTES-1)) {
             npregunta++;

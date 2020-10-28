@@ -18,7 +18,8 @@
         android:textAlignment="center"
         android:layout_weight="0.6"
         android:textColor="@color/questiontext"
-        android:textSize="28sp"
+        android:textSize="32sp"
+        android:textStyle="bold"
         tools:hint="Pregunta" />
 
     <ProgressBar
@@ -67,6 +68,4 @@
             android:textStyle="bold"
             android:layout_marginHorizontal="20dp"/>
     </LinearLayout>
-
-
 </LinearLayout>
